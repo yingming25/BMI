@@ -1,0 +1,13 @@
+$max-width: 1024px
+$text-color: #424242
+@mixin hide-text
+    text-indent: 110%
+    white-space: nowrap
+    overflow: hidden
+@mixin clearfix
+    &:before,
+    &:after 
+        content: " "
+        display: table  
+    &:after 
+        clear: both
