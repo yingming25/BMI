@@ -55,10 +55,8 @@ function updateList(items){
         }else{
             str += '<li data-num="'+ i +'" class="fat"><p>重度肥胖<span class="bmi2">BMI</span>'+ items[i].bmi +'<span class="weight">weight</span>'+ items[i].weight +'kg<span class="height">height</span>'+ items[i].height +'cm<span class="date">'+ dateString +'</span></p></li>';
         }
-              
     }*/
-    
- 
+
 }
 
 //計算BMI並新增LI
@@ -146,10 +144,10 @@ function countBMI(e){
     resulttext.style.display = 'block';
     circle.style.display = 'block';
 
-    
-    
-    
-    
+
+    send.removeEventListener('click',countBMI);
+
+
 }
 
 //重新整理
